@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="One_Shot_Learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H4a-Rg-6ur">
+                                <rect key="frame" x="0.0" y="44" width="414" height="768"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLX-va-anl">
+                                <rect key="frame" x="169" y="832" width="76" height="30"/>
+                                <state key="normal" title="Take Photo"/>
+                                <connections>
+                                    <action selector="takePhotoWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1je-P3-qCC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H4a-Rg-6ur" secondAttribute="trailing" id="49B-pk-beL"/>
+                            <constraint firstItem="pLX-va-anl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MQj-rA-HLn"/>
+                            <constraint firstItem="pLX-va-anl" firstAttribute="top" secondItem="H4a-Rg-6ur" secondAttribute="bottom" constant="20" id="TUS-6o-oCL"/>
+                            <constraint firstItem="H4a-Rg-6ur" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WPK-1j-Z7U"/>
+                            <constraint firstItem="pLX-va-anl" firstAttribute="centerX" secondItem="H4a-Rg-6ur" secondAttribute="centerX" id="YK3-q5-sLB"/>
+                            <constraint firstItem="H4a-Rg-6ur" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pTu-7e-Br4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="H4a-Rg-6ur" id="o66-ja-Ak9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>
